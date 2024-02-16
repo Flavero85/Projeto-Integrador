@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background: linear-gradient(to left, #006816, #f8f8f8);
 }
 
 h1{
@@ -31,4 +31,9 @@ h1{
 .footer {
     background-color: rgb(94, 90, 90);
     padding-bottom: 0px;
+    
+}
+
+.hearder{
+    
 }
