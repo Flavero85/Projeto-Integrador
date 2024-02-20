@@ -118,12 +118,16 @@ html, body {
     
 }
 p{
+  margin-top: 35px;
   align-items: center;
   justify-content: center;
   font-size: 22px;
   padding-left: 27%;
+  margin-bottom: 35px;
 }
-.principal img{
+img{
+    margin-top: 20px;
+    flex-wrap: nowrap;
     width: 300px;
     height: 200px;
     position: absolute;
@@ -131,9 +135,32 @@ p{
 }
 
 .principal-1{
+  margin-top: 20px;
     font-size: 26px;
     background-color: #3527fd;
     width: 100%;
     padding: 24px;
     color: white;
+}
+
+.popup{
+  margin-top: 100px;
+  padding-bottom: 250px;
+}
+
+.rodape {
+  font-size: 16px;
+  background-color: #333333;
+  padding: 10px;
+  padding-left: 30px;
+  color: white;
+  border: #333333;
+}
+
+i{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-size: 18px;
+
 }
