@@ -109,6 +109,7 @@ html, body {
   }
 
 .titulo h1{
+    padding-top: 20px;
     color: rgb(0, 0, 0);
     font-size: 56px;
     align-items: center;
@@ -165,3 +166,21 @@ i{
   font-size: 18px;
 
 }
+
+.conteudo .texto-sobre {
+  margin-left: 200px;
+  padding: 100px;
+  font-size: 20px;
+  width: 70%;
+  margin: 10px 0 10px 0 10px;
+  line-height: 30px;
+}
+
+.nomes{
+  margin-left: -200px;
+  margin-top: 50px;
+  font-size: 24px;
+  color: #444242;
+}
+
+
