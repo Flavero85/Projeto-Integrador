@@ -4,24 +4,21 @@ html, body {
     background-color: #97c2db;
   }
   
-  /* Define a fonte Raleway para todos os elementos e ajusta o modelo de caixa */
   * {
     font-family: "Raleway";
     box-sizing: border-box;
   }
   
-  /* Estiliza a barra de navegação superior */
   .top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    background: linear-gradient(to left, #3527fd, #8a8fad);
     color: #FFF;
     height: 50px;
     padding: 16px;
   }
   
-  /* Estiliza a lista de navegação */
   .menu {
     display: flex;
     list-style-type: none;
@@ -29,13 +26,11 @@ html, body {
     padding: 0;
   }
   
-  /* Estiliza os itens da lista de navegação */
   .menu > li {
     margin: 0 14px;
     overflow: hidden;
   }
   
-  /* Estiliza o contêiner do botão do menu, inicialmente escondido */
   .menu-button-container {
     display: none;
     height: 100%;
@@ -50,7 +45,6 @@ html, body {
     display: none;
   }
   
-  /* Estiliza o ícone do botão do menu com três barras horizontais */
   .menu-button,
   .menu-button::before,
   .menu-button::after {
@@ -62,7 +56,6 @@ html, body {
     border-radius: 2px;
   }
   
-  /* Adiciona duas barras horizontais ao ícone do botão do menu */
   .menu-button::before {
     content: '';
     margin-top: -8px;
@@ -72,30 +65,12 @@ html, body {
     content: '';
     margin-top: 8px;
   }
-  
-  /* Animação do ícone do botão do menu quando o checkbox está marcado */
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-  }
-  
-  /* Configurações para telas menores que 700px */
+
   @media (max-width: 700px) {
-    /* Torna visível o contêiner do botão do menu */
     .menu-button-container {
       display: flex;
     }
   
-    /* Ajusta o estilo do menu para empilhar verticalmente em telas pequenas */
     .menu {
       position: absolute;
       top: 0;
@@ -107,7 +82,6 @@ html, body {
       align-items: center;
     }
   
-    /* Configura a transição dos itens do menu quando o toggle do menu está ativo */
     #menu-toggle ~ .menu li {
       height: 0;
       margin: 0;
@@ -116,7 +90,6 @@ html, body {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
   
-    /* Ajusta o estilo dos itens do menu quando o toggle do menu está ativo */
     #menu-toggle:checked ~ .menu li {
       border: 1px solid #333;
       height: 36px;
@@ -124,7 +97,6 @@ html, body {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
   
-    /* Estiliza os itens do menu para telas pequenas */
     .menu > li {
       display: flex;
       justify-content: center;
@@ -145,32 +117,23 @@ html, body {
     padding-left: 35%;
     
 }
-.fotos img{
-    width: 300px;
-    height: 200px;
-    justify-content: center;
-    padding-left: 40%;
-    padding-top: -300px;
-}
-.seta-direita{
-    padding-left: 1000px;
-    padding-top: 200px;
-    z-index: 7;
-   
-}
-.seta-esquerda{
-    padding-left: 500px;
-}
-.arrow-left,
-.arrow-right {
-  display: flex;
+p{
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: white;
-  background-color:black;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
+  font-size: 22px;
+  padding-left: 27%;
+}
+.principal img{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin: 20px 500px;
+}
+
+.principal-1{
+    font-size: 26px;
+    background-color: #3527fd;
+    width: 100%;
+    padding: 24px;
+    color: white;
 }
