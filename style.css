@@ -126,12 +126,13 @@ p{
   margin-bottom: 35px;
 }
 img{
-    margin-top: 20px;
+    margin-top: 50%;
     flex-wrap: nowrap;
     width: 300px;
     height: 200px;
     position: absolute;
-    margin: 20px 500px;
+    margin: 40px 40%;
+    z-index: 1;
 }
 
 .principal-1{
