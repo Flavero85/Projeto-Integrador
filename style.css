@@ -24,11 +24,13 @@ html, body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
   }
   
   .menu > li {
     margin: 0 14px;
     overflow: hidden;
+    
   }
   
   .menu-button-container {
@@ -71,7 +73,7 @@ html, body {
       display: flex;
     }
   
-    .menu a {
+    .menu {
       position: absolute;
       top: 0;
       margin-top: 50px;
@@ -80,6 +82,7 @@ html, body {
       width: 100%;
       justify-content: center;
       align-items: center;
+      color: #FFF;
     }
   
     #menu-toggle ~ .menu li {
@@ -108,14 +111,14 @@ html, body {
     }
   }
 
-.titulo h1{
+.titulo{
+  display: flex;
     padding-top: 20px;
     color: rgb(0, 0, 0);
     font-size: 56px;
     align-items: center;
     justify-content: center;
-    align-items: center;
-    padding-left: 35%;
+     
     
 }
 p{
@@ -183,4 +186,6 @@ i{
   color: #444242;
 }
 
-
+li{
+  font-size: 14px;
+}
