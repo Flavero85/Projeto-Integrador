@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #97c2db;
+  }
+  
+  * {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #3527fd, #8a8fad);
+    color: #FFF;
+    height: 50px;
+    padding: 16px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .menu > li {
+    margin: 0 14px;
+    overflow: hidden;
+    
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+  
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+    }
+  
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 36px;
+      padding: 8px;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  
+    .menu > a {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 8px 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+  }
+
+.titulo{
+  display: flex;
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 56px;
+    align-items: center;
+    justify-content: center;
+     
+    
+}
+p{
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  padding-left: 27%;
+  margin-bottom: 35px;
+}
+img{
+    margin-top: 50%;
+    flex-wrap: nowrap;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin: 40px 40%;
+    z-index: 1;
+}
+
+.principal-1{
+  margin-top: 20px;
+    font-size: 26px;
+    background-color: #3527fd;
+    width: 100%;
+    padding: 24px;
+    color: white;
+}
+
+.popup{
+  margin-top: 100px;
+  padding-bottom: 250px;
+}
+
+.rodape {
+  font-size: 16px;
+  background-color: #333333;
+  padding: 10px;
+  padding-left: 30px;
+  color: white;
+  border: #333333;
+}
+
+i{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-size: 18px;
+
+}
+
+.conteudo .texto-sobre {
+  margin-left: 200px;
+  padding: 100px;
+  font-size: 20px;
+  width: 70%;
+  margin: 10px 0 10px 0 10px;
+  line-height: 40px;
+}
+
+.conteudo .texto2-sobre {
+  margin-left: -150px;
+  padding: 100px;
+  font-size: 16px;
+  width: 100%;
+  line-height: 30px;
+}
+.nomes{
+  margin-left: -200px;
+  margin-top: 50px;
+  font-size: 24px;
+  color: #444242;
+}
+
+li{
+  font-size: 14px;
+}
+
+.center{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding:0 2%;
+}
+
+.clientes-slider{
+	padding:60px 0;
+}
+
+.clientes-slider img{padding:0 20px;}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top:10px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #0c3f8a;
+	color: #0c3f8a;
+}
+
+.slick-slide:focus { outline: none; }
+
+/**END SLICK**/
